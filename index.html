@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Rai | Personal Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: #f4f8fc;
+            color: #26364a;
+        }
+        header {
+            background: #102a43;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo { color: #fff; font-size: 25px; font-weight: bold; }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            list-style: none;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color .3s;
+        }
+        nav a:hover { color: #65c7f7; }
+        section { padding: 70px 10%; scroll-margin-top: 80px; }
+        .section-title {
+            text-align: center;
+            color: #102a43;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+        #intro {
+            background: linear-gradient(135deg, #d9efff, #fff);
+            text-align: center;
+        }
+        #intro h1 { font-size: 40px; color: #102a43; margin-bottom: 15px; }
+        #intro h2 { color: #168aad; margin-bottom: 20px; }
+        #intro p { max-width: 850px; margin: 12px auto; font-size: 17px; }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+            transition: transform .3s, box-shadow .3s;
+        }
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(0,0,0,.13);
+        }
+        .card h3 { color: #168aad; font-size: 22px; margin-bottom: 12px; }
+        #contact { background: #e3f2fd; }
+        .contact-intro { text-align: center; margin-bottom: 25px; }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+        }
+        .contact-form label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #b7c9d6;
+            border-radius: 6px;
+            font: inherit;
+        }
+        .contact-form textarea { resize: vertical; min-height: 120px; }
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: 2px solid #168aad;
+            border-color: #168aad;
+        }
+        .contact-form button {
+            background: #102a43;
+            color: #fff;
+            padding: 13px 25px;
+            border: 0;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background .3s;
+        }
+        .contact-form button:hover { background: #168aad; }
+        footer { background: #102a43; color: #fff; text-align: center; padding: 20px; }
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav ul { justify-content: center; gap: 15px; }
+            .card-container { grid-template-columns: 1fr; }
+            #intro h1 { font-size: 30px; }
+            section { padding: 50px 7%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">Komal Rai</div>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>Hello! I am Komal Rai</h1>
+            <h2>AI Trainer | Technology Enthusiast</h2>
+            <p>
+                I am Komal Rai, working as an AI Trainer. I teach Low-Code and
+                No-Code tools to college graduates, helping them understand
+                modern technology and develop practical digital solutions
+                without requiring extensive programming knowledge.
+            </p>
+            <p>
+                My role involves guiding students through different AI-powered
+                platforms, explaining their features, and helping them build
+                applications using simple and efficient approaches. I am
+                passionate about sharing knowledge, encouraging creativity,
+                and preparing graduates for the evolving digital world.
+            </p>
+        </section>
+
+        <section id="hobbies">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3>🏊 Swimming</h3>
+                    <p>
+                        Swimming is one of my favorite hobbies. It helps me stay
+                        physically active, maintain a healthy lifestyle, and
+                        refresh my mind. I enjoy swimming because it develops
+                        discipline, patience, confidence, and concentration.
+                        It is also a great way to relax and improve my overall
+                        well-being.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>💻 Application Development</h3>
+                    <p>
+                        I enjoy application development because it allows me
+                        to transform creative ideas into useful digital
+                        solutions. I like exploring different development
+                        platforms, experimenting with new technologies, and
+                        understanding how applications work. I am particularly
+                        interested in Low-Code and No-Code development tools.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2 class="section-title">My Interests</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3>🥾 Hiking</h3>
+                    <p>
+                        I enjoy hiking because it allows me to explore nature,
+                        discover new places, and experience beautiful
+                        landscapes. Hiking gives me an opportunity to spend
+                        time outdoors, challenge myself, and develop patience
+                        and perseverance. It also helps me refresh my mind
+                        and maintain a positive attitude.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>📚 Book Reading</h3>
+                    <p>
+                        Reading books is one of my favorite ways to gain
+                        knowledge and improve myself. I enjoy reading books
+                        on technology, personal development, creativity, and
+                        general knowledge. Reading helps me develop critical
+                        thinking, improve my vocabulary, and explore new ideas
+                        and perspectives.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-intro">
+                I would love to hear from you! Feel free to contact me for
+                questions, suggestions, knowledge sharing, or professional
+                collaboration.
+            </p>
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter subject" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message"
+                          placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Komal Rai. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
